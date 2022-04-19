@@ -7,13 +7,13 @@
 
 
 
- <%= form_with model: @book do |f| %>
+ <%= form_with model: @user do |f| %>
   <h6>Name</h6>
   <%= f.text_field :name %>
   <h6>image</h6>
   <%= f.file_field :image, accept: "image/*" %>
   <h6>Introduction</h6>
-  <%= f.text_area :Introduction %>
+  <%= f.text_area :introduction %>
   <div class="form-group">
   <%= f.submit 'Update User',class: "btn btn-secondary data-disable-with=Update User" %>
 
